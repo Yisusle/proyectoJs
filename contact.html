@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto con JavaScript</title>
+    <!--Estilos CSS-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+    
+    <!--jQuery-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!--jQuery UI-->
+    <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.min.css">
+
+    <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.theme.min.css">
+
+    <script type="text/javascript" src="js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+
+    <!--Form Validator Plugin 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/localization/messages_es.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/additional-methods.min.js"></script>
+    
+    <!--Mis scripts-->
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+    <div id="selector-theme">
+        <div id="to-green" class="Tooltips" title="Verde"></div>
+        <div id="to-red" class="Tooltips" title="Rojo"></div>
+        <div id="to-blue" class="Tooltips" title="Azul"></div>
+    </div>
+    <section id="global">
+        <!--CABECERA-->
+        <header>
+            <div id="logo">
+                <h1>Proyecto JS</h1>
+            </div>
+            <div class="clearfix"></div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="reloj.html">Reloj</a></li>
+                    <li><a href="about.html">Sobre Mi</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!--CONTENT-->
+        <section id="content">
+            <div id="box">
+                <!--Formulario-->
+                <h2>Contacto</h2>
+
+                <form action="" method="post" id="form_contact">
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" data-validation="tex" data-validation="required">
+
+                    <label for="surname">Apellidos:</label>
+                    <input type="text" name="surname" data-validation="text" data-validation="required">
+
+                    <label for="email"  data-validation="email">Email:</label>
+                    <input type="email" name="email">
+
+                    <label for="sex">Sexo:</label>
+                    <select name="sex"  data-validation="required">
+                        <option value="men">Hombre</option>
+                        <option value="woman">Mujer</option>
+                    </select>
+
+                    <label for="date" >Fecha de Nacimiento:</label>
+                    <input type="date" name="date" data-validation="date" data-validation="dd-mm-yyyy">
+
+                    <label for="years">Edad:</label>
+                    <input type="number" name="years" data-validation="number">
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+
+                <aside id="sidebar">
+                    <div id="about">
+                        <h4><span>¿Quién Soy?</span></h4>
+                        <img src="img/caracol.jpg" alt="Caracol">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur pulvinar nulla, vitae sodales felis tincidunt sit amet.
+                        </p>
+                    </div>
+
+                <!--LOGIN-->
+                    <div id="login">
+                        <h4><span>Indetifícate</span></h4>
+                        <form>
+                            <label for="name">Nombre:</label>
+                            <input type="text" name="name" id="form_name">
+                            
+                            <label for="email" id="form_email">Correo:</label>
+                            <input type="email" name="email">
+                            
+                            <label for="password" id="form_passord">Contraseña:</label>
+                            <input type="password" name="password">
+
+                            <input type="submit" value="Entrar" title="Entrar">
+                        </form>
+                    </div>
+                </aside>
+
+                <div class="clearfix"></div>
+        </section>
+
+    </section>
+    <footer>
+        Curso de JavaScript &copy;
+        <a href="#" class="subir">Ir Arriba</a>
+    </footer>
+</body>
+</html>

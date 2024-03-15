@@ -1,0 +1,29 @@
+body{
+    background: url('../img/rojo.jpg');
+    background-attachment: fixed;
+}
+
+#logo{
+    background-color: #ca3413;
+}
+
+
+#menu ul li:hover{
+    background-color: #ca3413;
+}
+
+
+.btn-mas{
+    background-color: #ca3413;
+}
+
+#logout{
+    background-color: #ca3413;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid #ff370b !important;
+    background: #ca3413 !important;
+    font-weight: normal;
+    color: #fff;
+}
